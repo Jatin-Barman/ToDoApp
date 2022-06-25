@@ -88,12 +88,9 @@ function App() {
               value={inputData}
               onChange={(event) => setInputData(event.target.value)}
             />
-
-            {toggleButton ? (
-              <i className="far fa-solid fa-edit add-btn" onClick={addItem}></i>
-            ) : (
-              <i className="fa fa-solid fa-plus add-btn" onClick={addItem}></i>
-            )}
+            {/* Dont check the value of toggleButton variable to show add or edit button conditionally */}
+            {/* Instead show add button all the time unconditionally */}
+            <i className="fa fa-solid fa-plus add-btn" onClick={addItem}></i>
           </div>
 
           {/* show our items */}
